@@ -3,6 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ClaseModule } from './clase/clase.module';
+import { BonoModule } from './bono/bono.module';
+import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -16,7 +19,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     dropSchema: true,
     synchronize: true,
     keepConnectionAlive: true,
-    })
+    }), UsuarioModule, ClaseModule, BonoModule
     // Importa los modulos
   ],
   controllers: [AppController],
