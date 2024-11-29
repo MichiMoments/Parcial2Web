@@ -1,7 +1,6 @@
 import { Controller, Post, Body, Get, Param, Delete } from '@nestjs/common';
 
-import { BonoEntity } from 'src/bono/bono.entity/bono.entity';
-
+import { BonoEntity } from './bono.entity/bono.entity';
 import { BonoService } from './bono.service';
 
 @Controller('bono')

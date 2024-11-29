@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { BusinessError, BusinessLogicException } from 'src/shared/errors/business-errors';
+import { BusinessError, BusinessLogicException } from '../shared/errors/business-errors';
 
-import { ClaseEntity } from 'src/clase/clase.entity/clase.entity';
+import { ClaseEntity } from '../clase/clase.entity/clase.entity';
 
 @Injectable()
 export class ClaseService {

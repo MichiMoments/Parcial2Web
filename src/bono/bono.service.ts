@@ -1,11 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { BusinessError, BusinessLogicException } from 'src/shared/errors/business-errors';
+import { BusinessError, BusinessLogicException } from '../shared/errors/business-errors';
 
-import { UsuarioEntity } from 'src/usuario/usuario.entity/usuario.entity';
-import { BonoEntity } from 'src/bono/bono.entity/bono.entity';
-import { ClaseEntity } from 'src/clase/clase.entity/clase.entity';
+import { UsuarioEntity } from '../usuario/usuario.entity/usuario.entity';
+import { BonoEntity } from '../bono/bono.entity/bono.entity';
+import { ClaseEntity } from '../clase/clase.entity/clase.entity';
 
 @Injectable()
 export class BonoService {
